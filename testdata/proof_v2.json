@@ -1,0 +1,45 @@
+{
+  "checkpoint_id": "cp-2026-q2-v2",
+  "event_id": "seq-4",
+  "issued_at": "2026-06-30T00:00:00Z",
+  "subject": "Demo Bank \u2014 model governance chain",
+  "leaf_index": 4,
+  "tree_size": 5,
+  "leaf_input": "2b7437de24f3a2b4e89742345492a60901211fddae9fd9b3fdd49e451a64af14",
+  "proof_path": [
+    "358ab9813b683cb1f25ea2ff843ea5b0ab45f43957d7230ab1d445229e92ff19"
+  ],
+  "merkle_root": "e503ebf661702adc191715fd85b0452e62e2083b775f95cfdfb1d822ce3aaf8c",
+  "sth_body": {
+    "subject": "Demo Bank \u2014 model governance chain",
+    "issued_at": "2026-06-30T00:00:00Z",
+    "length": 5,
+    "head_hash": "2b7437de24f3a2b4e89742345492a60901211fddae9fd9b3fdd49e451a64af14",
+    "merkle_root": "e503ebf661702adc191715fd85b0452e62e2083b775f95cfdfb1d822ce3aaf8c",
+    "tree_size": 5,
+    "key_id": "test-key-2026",
+    "continuity": {
+      "obligations": {
+        "approved": 1,
+        "reviewed": 2,
+        "challenged": 0
+      },
+      "coverage_gaps": [
+        {
+          "from": "2026-03-03T16:20:00Z",
+          "to": "2026-05-19T10:05:00Z",
+          "days": 77,
+          "classification": "normal_cadence",
+          "reason": "no model events fell due in this window"
+        }
+      ]
+    },
+    "tree_version": 2
+  },
+  "checkpoint_signature": "5cf124339f91f37699ecb7c6d6eb659b9aef38248854fbe137dda9fb2f99e51886cd78f37dcf4c39b3e912421327749e39918bf2e0ab8c453dfe839aad0b5201",
+  "key_id": "test-key-2026",
+  "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA11qYAYKxCrfVS/7TyWQHOg7hcvPapiMlrwIaaPcHURo=\n-----END PUBLIC KEY-----\n",
+  "anchor": {
+    "status": "not anchored"
+  }
+}

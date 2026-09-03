@@ -1,0 +1,149 @@
+{
+  "statement": {
+    "certificate_version": "1.0",
+    "subject": "Demo Bank \u2014 model governance chain",
+    "period": {
+      "from": "2026-03-31T00:00:00Z",
+      "to": "2026-06-30T00:00:00Z"
+    },
+    "checkpoint_count": 2,
+    "checkpoints": [
+      {
+        "checkpoint_id": "cp-2026-q1",
+        "sth_body": {
+          "subject": "Demo Bank \u2014 model governance chain",
+          "issued_at": "2026-03-31T00:00:00Z",
+          "length": 4,
+          "head_hash": "3b91caf08be5d4b539b38759b7bb04b390df0cf0cde78574adf01bf6ea0494ba",
+          "merkle_root": "358ab9813b683cb1f25ea2ff843ea5b0ab45f43957d7230ab1d445229e92ff19",
+          "tree_size": 4,
+          "key_id": "test-key-2026",
+          "continuity": {
+            "obligations": {
+              "approved": 0,
+              "reviewed": 0,
+              "challenged": 0
+            },
+            "coverage_gaps": []
+          }
+        },
+        "signature_hex": "591f0f4780a7e66e635263af60d00c9aec43e9b88c26f5b619a8871fcabb0222df16aedf8f24db6f5f640db589ace3ca982797ac58921472a0964e59aa197602",
+        "key_id": "test-key-2026"
+      },
+      {
+        "checkpoint_id": "cp-2026-q2",
+        "sth_body": {
+          "subject": "Demo Bank \u2014 model governance chain",
+          "issued_at": "2026-06-30T00:00:00Z",
+          "length": 5,
+          "head_hash": "2b7437de24f3a2b4e89742345492a60901211fddae9fd9b3fdd49e451a64af14",
+          "merkle_root": "c97609a7498729378a3d67e05e85c2c5e4a31c43f5d0704321d1caa63aedf60a",
+          "tree_size": 5,
+          "key_id": "test-key-2026",
+          "continuity": {
+            "obligations": {
+              "approved": 1,
+              "reviewed": 2,
+              "challenged": 0
+            },
+            "coverage_gaps": [
+              {
+                "from": "2026-03-03T16:20:00Z",
+                "to": "2026-05-19T10:05:00Z",
+                "days": 77,
+                "classification": "normal_cadence",
+                "reason": "no model events fell due in this window"
+              }
+            ]
+          }
+        },
+        "signature_hex": "80e67c9400a14cb145659bb3a6ef47b4057cafc9c78a64e5ffbf51fc6be178daa98d420eebecc5d9a50f777c6e390ff395e09887fa99a1456ca532a222738306",
+        "key_id": "test-key-2026"
+      }
+    ],
+    "linkage": [
+      {
+        "from_checkpoint_id": "cp-2026-q1",
+        "to_checkpoint_id": "cp-2026-q2",
+        "sealed_head": "3b91caf08be5d4b539b38759b7bb04b390df0cf0cde78574adf01bf6ea0494ba",
+        "merkle_root": "c97609a7498729378a3d67e05e85c2c5e4a31c43f5d0704321d1caa63aedf60a",
+        "tree_size": 5,
+        "leaf_index": 3,
+        "proof_path": [
+          "7e2d021577d62b652cb1dd77ffa6058e7d73f2d287d94362b26f94e70f637805",
+          "7fde8015dd758f00a78b4416dec326097f18037d8716b3b17b5da17114f48108",
+          "d079eb2351440dd71753cfc3483bde8cc74f1ac4a72860f9277c0273bf935ac6"
+        ],
+        "provable": true
+      }
+    ],
+    "linkage_status": "proven",
+    "linkage_unbroken": true,
+    "links_proven": 1,
+    "coverage": {
+      "sealed_event_count": 5,
+      "events_added_in_period": 1,
+      "obligations_in_period": {
+        "approved": 1,
+        "reviewed": 2,
+        "challenged": 0
+      },
+      "obligations_closing": {
+        "approved": 1,
+        "reviewed": 2,
+        "challenged": 0
+      }
+    },
+    "coverage_gaps": [
+      {
+        "from": "2026-03-03T16:20:00Z",
+        "to": "2026-05-19T10:05:00Z",
+        "days": 77,
+        "classification": "normal_cadence",
+        "reason": "no model events fell due in this window"
+      }
+    ],
+    "gap_summary": {
+      "total": 1,
+      "normal_cadence": 1,
+      "exceeds_policy": 0
+    },
+    "claim": "Governance was continuous from 2026-03-31 to 2026-06-30 across 2 sealed checkpoints, with 1 quiet period at normal cadence."
+  },
+  "signature_hex": "9e99a93fb49bf643df4862bb7b57255265a9b5841a647a44c57e53be42398aebab6b21947bf2071af1e35c78697e6dac7b5b5e72c4fdf75cdbc154483dd10c0f",
+  "key_id": "test-key-2026",
+  "public_keys": {
+    "test-key-2026": {
+      "pem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA11qYAYKxCrfVS/7TyWQHOg7hcvPapiMlrwIaaPcHURo=\n-----END PUBLIC KEY-----\n",
+      "revoked": false
+    }
+  },
+  "cosignatures": {
+    "cp-2026-q2": [
+      {
+        "witness_key_id": "witness-demo-bank-self",
+        "witness_label": "Demo Bank (itself)",
+        "signature_hex": "becf95cd26dec5ae907b9db5c4dda9f0c53735577ec4a46d69d4972ca21a8bf8fff0761f1df13d548b760b229a280d83d85c13ba4d63b7cb70c183ec46a93e03",
+        "signed_at": "2026-06-30T09:00:00Z",
+        "witness_relationship": "self",
+        "revoked": false
+      },
+      {
+        "witness_key_id": "witness-lindqvist-audit",
+        "witness_label": "Lindqvist & Co",
+        "signature_hex": "2481893f81411439aacf1db1238eeda2ed4a3449c08d176abe5a8ae83e96bf1db0fd0c71d96a94babee7f8c40c879619c1a7ccca51682f9bdc8fbe01c1917e01",
+        "signed_at": "2026-07-01T11:30:00Z",
+        "witness_relationship": "independent",
+        "revoked": false
+      }
+    ]
+  },
+  "anchors": {
+    "cp-2026-q2": {
+      "status": "anchored",
+      "rekor_uuid": "24296fb24b8ad77a000000000000000000000000000000000000000000000000",
+      "rekor_log_index": 123456,
+      "anchored_at": "2026-06-30T00:05:00Z"
+    }
+  }
+}

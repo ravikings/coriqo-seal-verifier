@@ -1,0 +1,69 @@
+[
+  {
+    "timestamp": "2026-01-08T09:15:00Z",
+    "actor": "j.okafor",
+    "action": "register",
+    "model_name": "retail-pd-scorecard",
+    "model_version": "2.1",
+    "payload": {
+      "risk_tier": "high"
+    },
+    "seq": 0,
+    "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "event_hash": "d0fb5582891008e79216cabc4759cd24e3d62f4265a15c114a291e02b00e098a"
+  },
+  {
+    "timestamp": "2026-01-22T14:02:00Z",
+    "actor": "j.okafor",
+    "action": "submit",
+    "model_name": "retail-pd-scorecard",
+    "model_version": "2.1",
+    "payload": {
+      "documents": 4
+    },
+    "seq": 1,
+    "prev_hash": "d0fb5582891008e79216cabc4759cd24e3d62f4265a15c114a291e02b00e098a",
+    "event_hash": "9e17d8db8e912d1a9f37f0be61dba85aa4374a91aba52128fc81cd80e292f2de"
+  },
+  {
+    "timestamp": "2026-02-11T11:40:00Z",
+    "actor": "a.lindqvist",
+    "action": "review",
+    "model_name": "retail-pd-scorecard",
+    "model_version": "2.1",
+    "payload": {
+      "finding_count": 2,
+      "decision": "conditions"
+    },
+    "seq": 2,
+    "prev_hash": "9e17d8db8e912d1a9f37f0be61dba85aa4374a91aba52128fc81cd80e292f2de",
+    "event_hash": "eaa13a0effee87b4c583b819fb036ca6f33a468156c20c0075e1593f2f0995d5"
+  },
+  {
+    "timestamp": "2026-03-03T16:20:00Z",
+    "actor": "m.chen",
+    "action": "approve",
+    "model_name": "retail-pd-scorecard",
+    "model_version": "2.1",
+    "payload": {
+      "conditions_cleared": true
+    },
+    "seq": 3,
+    "prev_hash": "eaa13a0effee87b4c583b819fb036ca6f33a468156c20c0075e1593f2f0995d5",
+    "event_hash": "3b91caf08be5d4b539b38759b7bb04b390df0cf0cde78574adf01bf6ea0494ba"
+  },
+  {
+    "timestamp": "2026-05-19T10:05:00Z",
+    "actor": "a.lindqvist",
+    "action": "review",
+    "model_name": "fraud-triage-agent",
+    "model_version": "1.0",
+    "payload": {
+      "finding_count": 0,
+      "decision": "pass"
+    },
+    "seq": 4,
+    "prev_hash": "3b91caf08be5d4b539b38759b7bb04b390df0cf0cde78574adf01bf6ea0494ba",
+    "event_hash": "2b7437de24f3a2b4e89742345492a60901211fddae9fd9b3fdd49e451a64af14"
+  }
+]

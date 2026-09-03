@@ -1,0 +1,121 @@
+{
+  "statement": {
+    "certificate_version": "1.0",
+    "subject": "Demo Bank \u2014 model governance chain",
+    "period": {
+      "from": "2026-03-31T00:00:00Z",
+      "to": "2026-03-15T00:00:00Z"
+    },
+    "checkpoint_count": 2,
+    "checkpoints": [
+      {
+        "checkpoint_id": "cp-2026-q1",
+        "sth_body": {
+          "subject": "Demo Bank \u2014 model governance chain",
+          "issued_at": "2026-03-31T00:00:00Z",
+          "length": 4,
+          "head_hash": "3b91caf08be5d4b539b38759b7bb04b390df0cf0cde78574adf01bf6ea0494ba",
+          "merkle_root": "358ab9813b683cb1f25ea2ff843ea5b0ab45f43957d7230ab1d445229e92ff19",
+          "tree_size": 4,
+          "key_id": "test-key-2026",
+          "continuity": {
+            "obligations": {
+              "approved": 0,
+              "reviewed": 0,
+              "challenged": 0
+            },
+            "coverage_gaps": []
+          }
+        },
+        "signature_hex": "591f0f4780a7e66e635263af60d00c9aec43e9b88c26f5b619a8871fcabb0222df16aedf8f24db6f5f640db589ace3ca982797ac58921472a0964e59aa197602",
+        "key_id": "test-key-2026"
+      },
+      {
+        "checkpoint_id": "cp-2026-q2",
+        "sth_body": {
+          "subject": "Demo Bank \u2014 model governance chain",
+          "issued_at": "2026-03-15T00:00:00Z",
+          "length": 5,
+          "head_hash": "2b7437de24f3a2b4e89742345492a60901211fddae9fd9b3fdd49e451a64af14",
+          "merkle_root": "c97609a7498729378a3d67e05e85c2c5e4a31c43f5d0704321d1caa63aedf60a",
+          "tree_size": 5,
+          "key_id": "test-key-2026",
+          "continuity": {
+            "obligations": {
+              "approved": 1,
+              "reviewed": 2,
+              "challenged": 0
+            },
+            "coverage_gaps": [
+              {
+                "from": "2026-03-03T16:20:00Z",
+                "to": "2026-05-19T10:05:00Z",
+                "days": 77,
+                "classification": "normal_cadence",
+                "reason": "no model events fell due in this window"
+              }
+            ]
+          }
+        },
+        "signature_hex": "d43eef3b93cd03356b92c4ef1879e9a79a91f6afb8634b326514987e793647847bdb80798d872b381f65ab488455f2e433fc5629b9f7a772fd0ff598cb955503",
+        "key_id": "test-key-2026"
+      }
+    ],
+    "linkage": [
+      {
+        "from_checkpoint_id": "cp-2026-q1",
+        "to_checkpoint_id": "cp-2026-q2",
+        "sealed_head": "3b91caf08be5d4b539b38759b7bb04b390df0cf0cde78574adf01bf6ea0494ba",
+        "merkle_root": "c97609a7498729378a3d67e05e85c2c5e4a31c43f5d0704321d1caa63aedf60a",
+        "tree_size": 5,
+        "leaf_index": 3,
+        "proof_path": [
+          "7e2d021577d62b652cb1dd77ffa6058e7d73f2d287d94362b26f94e70f637805",
+          "7fde8015dd758f00a78b4416dec326097f18037d8716b3b17b5da17114f48108",
+          "d079eb2351440dd71753cfc3483bde8cc74f1ac4a72860f9277c0273bf935ac6"
+        ],
+        "provable": true
+      }
+    ],
+    "linkage_status": "proven",
+    "linkage_unbroken": true,
+    "links_proven": 1,
+    "coverage": {
+      "sealed_event_count": 5,
+      "events_added_in_period": 1,
+      "obligations_in_period": {
+        "approved": 1,
+        "reviewed": 2,
+        "challenged": 0
+      },
+      "obligations_closing": {
+        "approved": 1,
+        "reviewed": 2,
+        "challenged": 0
+      }
+    },
+    "coverage_gaps": [
+      {
+        "from": "2026-03-03T16:20:00Z",
+        "to": "2026-05-19T10:05:00Z",
+        "days": 77,
+        "classification": "normal_cadence",
+        "reason": "no model events fell due in this window"
+      }
+    ],
+    "gap_summary": {
+      "total": 1,
+      "normal_cadence": 1,
+      "exceeds_policy": 0
+    },
+    "claim": "Governance chain with backdated second checkpoint (test fixture for timestamp monotonicity check)."
+  },
+  "signature_hex": "520819194721c6232f9b2fc8e0c995cec44d37a35ea713cbd10b8487e0dca7eef3e483bab2ac56f7b0c7f18571f97fb2f76fb1c47b3a18116a982226a34cdf0d",
+  "key_id": "test-key-2026",
+  "public_keys": {
+    "test-key-2026": {
+      "pem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA11qYAYKxCrfVS/7TyWQHOg7hcvPapiMlrwIaaPcHURo=\n-----END PUBLIC KEY-----\n",
+      "revoked": false
+    }
+  }
+}
